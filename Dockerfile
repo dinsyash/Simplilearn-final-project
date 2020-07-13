@@ -1,5 +1,5 @@
 FROM alpine:latest
-Add src/SimplilearnJava.class src/SimplilearnJava.class
+Add src/SimplilearnJavafile.class src/SimplilearnJavafile.class
 RUN apk --update add openjdk8-jre
 WORKDIR src/
-ENTRYPOINT ["java","-DJava.security.egd=file:/dev/./urandom","SimplilearnJava"]
+ENTRYPOINT ["java","-DJava.security.egd=file:/dev/./urandom","SimplilearnJavafile"]
